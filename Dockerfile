@@ -11,7 +11,7 @@ RUN set -ex; \
     curl -fsSL -o struts-2.3.36-apps.zip \
             "http://archive.apache.org/dist/struts/2.3.36/struts-2.3.36-apps.zip"; \
     unzip struts-2.3.36-apps.zip -d /tmp/; \
-    cp /tmp/struts-2.3.36/apps/struts2-showcase.war /usr/local/tomcat/webapps/; \
+    cp /tmp/struts-2.3.36/apps/struts2-showcase-2.3.36.war /usr/local/tomcat/webapps/; \
     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; \
     rm -rf /var/lib/apt/lists/*; \
     rm -rf /tmp/*
