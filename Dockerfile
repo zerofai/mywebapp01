@@ -7,7 +7,6 @@ RUN set -ex; \
     apt-get install -y --no-install-recommends \
         unzip \
     ; \
-    rm -rf /var/lib/apt/lists/*; \
     curl -fsSL -o struts-2.3.28.1-apps.zip \
             "http://archive.apache.org/dist/struts/2.3.28.1/struts-2.3.28.1-apps.zip"; \
     unzip struts-2.3.28.1-apps.zip -d /tmp/; \
