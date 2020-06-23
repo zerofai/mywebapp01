@@ -1,5 +1,5 @@
 # Docker
-# Build a Docker image 
+# Build and Push a Docker image 
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
 trigger:
@@ -21,9 +21,11 @@ stages:
       vmImage: 'ubuntu-latest'
     steps:
     - task: Docker@2
-      displayName: Build an image
+      displayName: Build and Push image
       inputs:
-        command: build
+        command: buildAndPush
+        containerRegistry: 'tenableio-consec'
+        repository: 'azure-pipeline'
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
           $(tag)
