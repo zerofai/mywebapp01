@@ -2,7 +2,7 @@
 - task: Docker@2
   inputs:
     containerRegistry: 'tenable.io ConSec'
-    repository: 'azure-pipeline'
+    repository: 'azurepipeline'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
 # Build a Docker image 
