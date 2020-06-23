@@ -1,4 +1,4 @@
-- task: Docker@2
+task: Docker@2
   inputs:
     containerRegistry: 'tenableio-consec'
     repository: 'azure-pipeline'
