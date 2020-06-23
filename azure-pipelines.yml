@@ -1,7 +1,9 @@
+# Docker
 task: Docker@2
   inputs:
     containerRegistry: 'tenableio-consec'
-    repository: 'azure-pipeline'
+    repository: 'azure-vuln-web-app'
     command: 'buildAndPush'
-    Dockerfile: 'https://github.com/zerofai/mywebapp01/blob/azure-pipelines/Dockerfile'
-    buildContext: 
+    Dockerfile: '**/Dockerfile'
+# Build a Docker image 
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
