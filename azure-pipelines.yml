@@ -47,6 +47,6 @@ stages:
             "Content-Type":"application/json", 
             "x-apikeys": "accessKey=d8ade8faa6ce250a8e0f1e0780c3afd5e9ef7e0913a64a7f55db3c78ffd4017b;secretKey=35b89e7722942ae6c5b9b738c8d67958750c09313c4754f0bcae22ae62d263a4", 
             }
-        urlSuffix: '/container-security/api/v1/compliancebyname?image=azure-webapp01&repo=azure&tag=$(tag)'
+        urlSuffix: 'container-security/api/v1/compliancebyname?image=azure-webapp01&repo=azure&tag=$(tag)'
         waitForCompletion: 'false'
         successCriteria: 'eq(root[''status''], ''pass'')'
