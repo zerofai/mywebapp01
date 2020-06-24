@@ -30,8 +30,7 @@ stages:
         tags: |
           $(tag)
           
-  jobs:  
-  - job: string
+  - job: CheckVulns
     pool: server
     - task: InvokeRESTAPI@1
       inputs:
