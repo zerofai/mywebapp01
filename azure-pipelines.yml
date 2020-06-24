@@ -49,4 +49,4 @@ stages:
             }
         urlSuffix: '/container-security/api/v1/compliancebyname?image=azure-webapp01&repo=azure&tag=$(tag)'
         waitForCompletion: 'false'
-        successCriteria: 'eq(root[''status''], ''pass'''
+        successCriteria: 'eq(root[''status''], ''pass'')'
