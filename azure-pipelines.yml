@@ -29,7 +29,6 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
           $(tag)
-
     - task: InvokeRESTAPI@1
       inputs:
         connectionType: 'connectedServiceName'
