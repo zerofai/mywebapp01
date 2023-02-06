@@ -1,4 +1,4 @@
-FROM tomcat:7-jdk8-openjdk-slim
+FROM tomcat:8.5.82-jre8-openjdk-slim-buster
 
 RUN apt-get -y update && apt-get -y upgrade && apt-get -y clean
 
