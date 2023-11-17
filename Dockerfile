@@ -1,5 +1,5 @@
 #This is a vulnerable container, don't use this in production!
-FROM tomcat:7-jdk8-openjdk-slim                                                                                                                                
+FROM tomcat:8.5.81-jdk8-openjdk-slim                                                                                                                                
   
 RUN set -ex; \
     apt-get update; \
